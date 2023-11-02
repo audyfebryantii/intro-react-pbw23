@@ -1,17 +1,23 @@
-import { Inter } from 'next/font/google'
+import { Inter } from "next/font/google";
 
-
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Uji Coba",
-  description: 'Pemrograman Web 2023',
-}
+  title: "Od's Site",
+  description: "Pemograman Web 2023",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        style={{
+          margin: 0,
+        }}
+        className={inter.className}
+      >
+        {children}
+      </body>
     </html>
-  )
+  );
 }

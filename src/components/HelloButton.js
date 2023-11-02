@@ -1,26 +1,25 @@
 export default function HelloButton({ buttonText, buttonText2 }) {
   return (
-    <section
-      style={{
-        width: "100vw",
-        height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <h1
+    <>
+      <button
         style={{
-          margin: 0,
-          marginBottom: "12px",
-          fontSize: "24px",
+          width: "240px",
+          height: "36px",
         }}
       >
-        Welcome to my App
-      </h1>
-      <button>{buttonText}</button>
-      <button>{buttonText2}</button>
-    </section>
+        {" "}
+        {buttonText}{" "}
+      </button>
+      <button
+        style={{
+          width: "240px",
+          height: "36px",
+          marginTop: "12px",
+        }}
+      >
+        {" "}
+        {buttonText2}{" "}
+      </button>
+    </>
   );
 }
